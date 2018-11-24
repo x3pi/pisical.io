@@ -1,0 +1,25 @@
+{
+  "name": "pisical.io",
+  "version": "1.0.0",
+  "description": "Demo mô phỏng vật lý phía máy chủ.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x3pi/pisical.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x3pi/pisical.io/issues"
+  },
+  "homepage": "https://github.com/x3pi/pisical.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "matter-js": "^0.14.2",
+    "socket.io": "^2.1.1"
+  }
+}
