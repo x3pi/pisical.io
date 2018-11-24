@@ -220,14 +220,16 @@ Matter.Events.on(mouseConstraint, 'enddrag', function (event) {
 });
 
 
-
+var even = 1;
 
 function myFunction(e) {
+
+    if(even = 10){even = 1}else{even++;}
 
     var x = e.clientX;
     var y = e.clientY;
     var coor = "Coordinates: (" + x + "," + y + ")";
-    socket.emit('clientEvent', { x: x, y: y, id: mouseData.id, type: mouseData.type });
+    if(even==1){socket.emit('clientEvent', { x: x, y: y, id: mouseData.id, type: mouseData.type });}
 
 }
 World.add(world, mouseConstraint);
